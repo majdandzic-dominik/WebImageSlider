@@ -44,9 +44,9 @@
     width: 90%;
 }
 
-/*slider navigation buttons ----------------------------------------------*/
+/*slider buttons ----------------------------------------------*/
 
-.nav-btns {
+.slider-btns {
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -55,7 +55,7 @@
     margin-left: 2rem;
 }
 
-.nav-btns>img {
+.slider-btns>img {
     width: 3rem;
     height: 3rem;
     border: 2px solid var(--light-gray);
