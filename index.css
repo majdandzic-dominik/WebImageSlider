@@ -68,6 +68,14 @@
     border: 2px solid var(--dark-blue);
 }
 
+.slider-btns>img:active{
+    width: 3.2rem;
+    height: 3.2rem;
+    padding: 1.1rem;
+    margin: 0.5rem 0 0.3rem -0.2rem;
+    border: 2px solid var(--dark-blue);
+}
+
 /*slider info text --------------------------------------------------------*/
 
 .slider-info {
