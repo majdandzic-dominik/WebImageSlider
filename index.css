@@ -64,6 +64,10 @@
     margin: 0.5rem 0;
 }
 
+.slider-btns>img:hover{
+    border: 2px solid var(--dark-blue);
+}
+
 /*slider info text --------------------------------------------------------*/
 
 .slider-info {
