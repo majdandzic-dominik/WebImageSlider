@@ -64,7 +64,8 @@
     margin: 0.5rem 0;
 }
 
-.slider-btns>img:hover{
+.slider-btns>img:hover,
+.slider-btns>img:active{
     border: 2px solid var(--dark-blue);
 }
 
@@ -73,8 +74,18 @@
     height: 3.2rem;
     padding: 1.1rem;
     margin: 0.5rem 0 0.3rem -0.2rem;
-    border: 2px solid var(--dark-blue);
 }
+
+#prevSlide:hover,
+#prevSlide:active{
+    content: url("./images/arrow-blue-left.png");
+}
+
+#nextSlide:hover,
+#nextSlide:active{
+    content: url("./images/arrow-blue-right.png");
+}
+
 
 /*slider info text --------------------------------------------------------*/
 
