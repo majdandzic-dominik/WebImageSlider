@@ -76,7 +76,9 @@ footer {
 }
 
 .slider-row>img {
-    height: 12.5rem;
+    height: 200px;
+    width: auto;
+    border-radius: 5px;
     position: relative;
 }
 
