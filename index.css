@@ -98,34 +98,32 @@ footer {
     justify-content: start;
     align-content: flex-end;
     order: -1;
-    margin-left: 2rem;
+    margin: 10px 0 0 0;
 }
 
-.slider-btns>img {
-    width: 3rem;
-    height: 3rem;
+.slider-btns>button:last-child{
+    margin-top: 10px;
+}
+
+.slider-btns>button {
+    width: 60px;
+    height: 60px;
     border: 2px solid var(--light-gray);
     padding: 1rem;
     border-radius: 5px;
-    margin: 0.5rem 0;
+    margin-left: 100px;
 }
 
-.slider-btns>img:hover, .slider-btns>img:active {
+.slider-btns>button:hover, .slider-btns>button:active {
     border: 2px solid var(--dark-blue);
 }
 
-.slider-btns>img:active {
-    width: 3.2rem;
-    height: 3.2rem;
-    padding: 1.1rem;
-    margin: 0.5rem 0 0.3rem -0.2rem;
-}
 
-#prevSlide:hover, #prevSlide:active {
+#prevSlide:hover>img, #prevSlide:active>img {
     content: url("./images/arrow-blue-left.png");
 }
 
-#nextSlide:hover, #nextSlide:active {
+#nextSlide:hover>img, #nextSlide:active>img {
     content: url("./images/arrow-blue-right.png");
 }
 
