@@ -68,11 +68,6 @@ footer {
 
 /*image slider -------------------------------------------------------------------*/
 
-.images-container {
-    display: flex;
-    flex-direction: column;
-}
-
 .slider-row {
     display: flex;
     flex-direction: row-reverse;
