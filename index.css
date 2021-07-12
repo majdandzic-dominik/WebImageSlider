@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
 :root {
     --dark-blue: #134880;
     --light-gray: #DDDDDD;
@@ -112,7 +113,6 @@ footer {
     margin-top: 10px;
 }
 
-
 .slider-btns>button {
     background-color: white;
     width: 60px;
@@ -120,11 +120,11 @@ footer {
     border-radius: 5px;
 }
 
-#prevSlide{
+#prevSlide {
     border: 1px solid var(--light-gray);
 }
 
-#nextSlide{
+#nextSlide {
     border: 1px solid var(--dark-blue);
 }
 
@@ -141,6 +141,7 @@ footer {
     content: url("./images/arrow-blue-right.png");
 }
 */
+
 /*slider info text --------------------------------------------------------*/
 
 .slider-info {
@@ -154,12 +155,23 @@ footer {
 }
 
 .slider-info h2 {
-    font-size: 2rem;
     font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: -0.2px;
     color: var(--dark-blue);
 }
 
 .slider-info p {
-    font-size: 1.125rem;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.2px;
     color: var(--dark-gray);
+
+    margin-top: 20px;
 }
