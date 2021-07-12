@@ -112,17 +112,25 @@ footer {
     margin-top: 10px;
 }
 
+
 .slider-btns>button {
     background-color: white;
     width: 60px;
     height: 60px;
-    border: 2px solid var(--light-gray);
-    padding: 1rem;
     border-radius: 5px;
 }
 
+#prevSlide{
+    border: 1px solid var(--light-gray);
+}
+
+#nextSlide{
+    border: 1px solid var(--dark-blue);
+}
+
+/*
 .slider-btns>button:hover, .slider-btns>button:active {
-    border: 2px solid var(--dark-blue);
+    border: 1px solid var(--dark-blue);
 }
 
 #prevSlide:hover>img, #prevSlide:active>img {
@@ -132,7 +140,7 @@ footer {
 #nextSlide:hover>img, #nextSlide:active>img {
     content: url("./images/arrow-blue-right.png");
 }
-
+*/
 /*slider info text --------------------------------------------------------*/
 
 .slider-info {
