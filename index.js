@@ -22,8 +22,8 @@ $(document).ready(function () {
         let imgWidth = $(slideImages + ":first").width();
         let columnGap = parseInt($(".slider-row").css("column-gap"));
 
-        $(slideImages).css({ "right": "" , "transform": ""});
-        
+        $(slideImages).css({ "right": "", "transform": "" });
+
         $(slideImages).animate({ left: (imgWidth + columnGap) + "px" }, 200);
         $(slideImages).promise().done(function () {
             $(slideImages + ":first").detach().insertAfter(slideImages + ":last");
