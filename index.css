@@ -27,7 +27,6 @@ header {
     height: 100px;
     right: 489px;
     top: 0px;
-    margin: 0 auto 60px auto;
 }
 
 .header-left {
@@ -68,12 +67,6 @@ footer {
 }
 
 /*image slider -------------------------------------------------------------------*/
-
-.slider-container {
-    display: flex;
-    width: 941px;
-    margin: 5rem auto;
-}
 
 .images-container {
     display: flex;
