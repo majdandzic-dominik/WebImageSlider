@@ -120,11 +120,11 @@ footer {
     border-radius: 5px;
 }
 
-#prevSlide {
+#btnScrollLeft {
     border: 1px solid var(--light-gray);
 }
 
-#nextSlide {
+#btnScrollRight {
     border: 1px solid var(--dark-blue);
 }
 
