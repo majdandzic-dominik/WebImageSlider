@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
-:root {
-    --dark-blue: #134880;
-    --light-gray: #DDDDDD;
-    --dark-gray: #47494C;
-}
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap");
+
+$color-dark-blue: #134880;
+$color-light-gray: #dddddd;
+$color-dark-gray: #47494c;
+
+$font-main: "Source Sans Pro", sans-serif;
 
 * {
     margin: 0;
@@ -19,7 +20,6 @@ body {
 }
 
 /*header -------------------------------------------------------------------*/
-
 header {
     display: flex;
     flex-direction: row;
@@ -31,7 +31,7 @@ header {
 }
 
 .header-left {
-    background-color: var(--light-gray);
+    background-color: $color-light-gray;
     width: 301px;
     height: 100px;
     margin-right: 19px;
@@ -41,7 +41,7 @@ header {
 .header-right {
     display: flex;
     align-items: center;
-    background-color: var(--light-gray);
+    background-color: $color-light-gray;
     width: 621px;
     height: 100px;
     padding-left: 80px;
@@ -55,7 +55,7 @@ header {
 footer {
     display: flex;
     align-items: center;
-    background-color: var(--light-gray);
+    background-color: $color-light-gray;
     position: absolute;
     width: 941px;
     height: 100px;
@@ -74,13 +74,13 @@ footer {
     flex-direction: row-reverse;
     column-gap: 9px;
     overflow: hidden;
-}
 
-.slider-row>img {
-    height: 200px;
-    width: auto;
-    border-radius: 5px;
-    position: relative;
+    > img {
+        height: 200px;
+        width: auto;
+        border-radius: 5px;
+        position: relative;
+    }
 }
 
 .top-row {
@@ -100,47 +100,32 @@ footer {
 }
 
 /*slider buttons ----------------------------------------------*/
-
 .slider-btns {
     position: absolute;
     width: 60px;
     height: 130px;
     right: 810px;
     bottom: 230px;
-}
 
-.slider-btns>button:last-child {
-    margin-top: 10px;
-}
+    > button {
+        background-color: white;
+        width: 60px;
+        height: 60px;
+        border-radius: 5px;
 
-.slider-btns>button {
-    background-color: white;
-    width: 60px;
-    height: 60px;
-    border-radius: 5px;
+        &:last-child {
+            margin-top: 10px;
+        }
+    }
 }
 
 #btnScrollLeft {
-    border: 1px solid var(--light-gray);
+    border: 1px solid $color-light-gray;
 }
 
 #btnScrollRight {
-    border: 1px solid var(--dark-blue);
+    border: 1px solid $color-dark-blue;
 }
-
-/*
-.slider-btns>button:hover, .slider-btns>button:active {
-    border: 1px solid var(--dark-blue);
-}
-
-#prevSlide:hover>img, #prevSlide:active>img {
-    content: url("./images/arrow-blue-left.png");
-}
-
-#nextSlide:hover>img, #nextSlide:active>img {
-    content: url("./images/arrow-blue-right.png");
-}
-*/
 
 /*slider info text --------------------------------------------------------*/
 
@@ -150,28 +135,27 @@ footer {
     height: 296px;
     right: 489px;
     top: 160px;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: $font-main;
     font-style: normal;
-}
 
-.slider-info h2 {
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 40px;
-    display: flex;
-    align-items: flex-end;
-    letter-spacing: -0.2px;
-    color: var(--dark-blue);
-}
+    h2 {
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 40px;
+        display: flex;
+        align-items: flex-end;
+        letter-spacing: -0.2px;
+        color: $color-dark-blue;
+    }
 
-.slider-info p {
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 26px;
-    display: flex;
-    align-items: center;
-    letter-spacing: -0.2px;
-    color: var(--dark-gray);
-
-    margin-top: 20px;
+    p {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 26px;
+        display: flex;
+        align-items: center;
+        letter-spacing: -0.2px;
+        color: $color-dark-gray;
+        margin-top: 20px;
+    }
 }
