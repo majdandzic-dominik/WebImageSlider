@@ -13,21 +13,13 @@ $font-main: "Source Sans Pro", sans-serif;
     box-sizing: border-box;
 }
 
-body {
-    position: relative;
-    width: 1920px;
-    height: 730px;
-}
-
 /*header -------------------------------------------------------------------*/
 header {
     display: flex;
     flex-direction: row;
-    position: absolute;
     width: 941px;
     height: 100px;
-    right: 489px;
-    top: 0px;
+    margin: auto;
 }
 
 .header-left {
@@ -56,11 +48,9 @@ footer {
     display: flex;
     align-items: center;
     background-color: $color-light-gray;
-    position: absolute;
     width: 941px;
     height: 100px;
-    right: 489px;
-    bottom: 0px;
+    margin: auto;
     padding-left: 80px;
     border-radius: 0px 0px 5px 5px;
     font-size: 15px;
@@ -82,33 +72,24 @@ footer {
     }
 }
 
-.no-transitions{
+.no-transitions {
     transition: none;
 }
 
 .top-row {
-    position: absolute;
     width: 1230px;
     height: 200px;
-    left: -120px;
-    top: 160px;
 }
 
 .bot-row {
-    position: absolute;
     width: 1080px;
     height: 200px;
-    left: -130px;
-    bottom: 160px;
 }
 
 /*slider buttons ----------------------------------------------*/
 .slider-btns {
-    position: absolute;
     width: 60px;
     height: 130px;
-    right: 810px;
-    bottom: 230px;
 
     > button {
         background-color: white;
@@ -133,11 +114,8 @@ footer {
 /*slider info text --------------------------------------------------------*/
 
 .slider-info {
-    position: absolute;
     width: 301px;
     height: 296px;
-    right: 489px;
-    top: 160px;
     font-family: $font-main;
     font-style: normal;
 
