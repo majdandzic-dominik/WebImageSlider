@@ -125,6 +125,7 @@ footer {
     &:hover,
     &:active {
         border: 1px solid $color-dark-blue;
+        cursor: pointer;
         > img {
             content: url("./images/arrow-blue-left.png");
         }
@@ -137,6 +138,7 @@ footer {
     &:hover,
     &:active {
         border: 1px solid $color-dark-blue;
+        cursor: pointer;
         > img {
             content: url("./images/arrow-blue-right.png");
         }

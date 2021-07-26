@@ -162,6 +162,7 @@ footer {
 
 #btnScrollLeft:hover, #btnScrollLeft:active {
   border: 1px solid #134880;
+  cursor: pointer;
 }
 
 #btnScrollLeft:hover > img, #btnScrollLeft:active > img {
@@ -174,6 +175,7 @@ footer {
 
 #btnScrollRight:hover, #btnScrollRight:active {
   border: 1px solid #134880;
+  cursor: pointer;
 }
 
 #btnScrollRight:hover > img, #btnScrollRight:active > img {
