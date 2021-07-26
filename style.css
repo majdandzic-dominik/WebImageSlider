@@ -1,13 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-/*header -------------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -46,7 +37,6 @@ header {
   color: white;
 }
 
-/*footer -------------------------------------------------------------------*/
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -64,7 +54,6 @@ footer {
   color: white;
 }
 
-/*image slider -------------------------------------------------------------------*/
 .slider-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -160,12 +149,12 @@ footer {
   border: 1px solid #dddddd;
 }
 
-#btnScrollLeft:hover, #btnScrollLeft:active {
+#btnScrollLeft:hover, #btnScrollLeft:active, #btnScrollLeft:focus {
   border: 1px solid #134880;
   cursor: pointer;
 }
 
-#btnScrollLeft:hover > img, #btnScrollLeft:active > img {
+#btnScrollLeft:hover > img, #btnScrollLeft:active > img, #btnScrollLeft:focus > img {
   content: url("./images/arrow-blue-left.png");
 }
 
@@ -173,12 +162,12 @@ footer {
   border: 1px solid #dddddd;
 }
 
-#btnScrollRight:hover, #btnScrollRight:active {
+#btnScrollRight:hover, #btnScrollRight:active, #btnScrollRight:focus {
   border: 1px solid #134880;
   cursor: pointer;
 }
 
-#btnScrollRight:hover > img, #btnScrollRight:active > img {
+#btnScrollRight:hover > img, #btnScrollRight:active > img, #btnScrollRight:focus > img {
   content: url("./images/arrow-blue-right.png");
 }
 
@@ -218,5 +207,12 @@ footer {
   letter-spacing: -0.2px;
   color: #47494c;
   margin-top: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 /*# sourceMappingURL=style.css.map */

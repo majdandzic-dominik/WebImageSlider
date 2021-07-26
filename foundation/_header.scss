@@ -1,0 +1,28 @@
+header {
+    display: flex;
+    flex-direction: row;
+    width: 941px;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.header-left {
+    background-color: $color-light-gray;
+    width: 301px;
+    height: 100px;
+    margin-right: 19px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    background-color: $color-light-gray;
+    width: 621px;
+    height: 100px;
+    padding-left: 80px;
+    border-radius: 0px 0px 5px 5px;
+    font-size: 15px;
+    color: white;
+}
