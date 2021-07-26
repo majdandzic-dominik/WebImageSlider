@@ -73,14 +73,17 @@ footer {
     display: flex;
     flex-direction: row-reverse;
     column-gap: 9px;
-    overflow: hidden;
-
+    transition: transform 1s linear;
     > img {
         height: 200px;
         width: auto;
         border-radius: 5px;
         position: relative;
     }
+}
+
+.no-transitions{
+    transition: none;
 }
 
 .top-row {

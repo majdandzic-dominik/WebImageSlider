@@ -84,7 +84,10 @@ footer {
           flex-direction: row-reverse;
   -webkit-column-gap: 9px;
           column-gap: 9px;
-  overflow: hidden;
+  -webkit-transition: -webkit-transform 1s linear;
+  transition: -webkit-transform 1s linear;
+  transition: transform 1s linear;
+  transition: transform 1s linear, -webkit-transform 1s linear;
 }
 
 .slider-row > img {
@@ -92,6 +95,11 @@ footer {
   width: auto;
   border-radius: 5px;
   position: relative;
+}
+
+.no-transitions {
+  -webkit-transition: none;
+  transition: none;
 }
 
 .top-row {
