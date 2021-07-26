@@ -65,96 +65,109 @@ footer {
     width: 941px;
     margin: auto;
     margin-bottom: 60px;
-
-    .slider-rows-container {
-        order: -1;
-        width: 620px;
-
-        .slider-row {
-            display: flex;
-            flex-direction: row-reverse;
-            column-gap: 9px;
-            transition: transform 1s linear;
-            > img {
-                height: 200px;
-                width: auto;
-                border-radius: 5px;
-            }
-        }
-
-        .no-transitions {
-            transition: none;
-        }
-
-        .top-row {
-            margin-bottom: 10px;
-        }
-
-        .bot-row-container {
-            display: flex;
-            flex-direction: row;
-
-            .bot-row {
-                width: 460px;
-            }
-            /*slider buttons ----------------------------------------------*/
-            .slider-btns {
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-                padding-left: 100px;
-                z-index: 100;
-                background-color: white;
-
-                > button {
-                    background-color: white;
-                    width: 60px;
-                    height: 60px;
-                    border-radius: 5px;
-
-                    &:last-child {
-                        margin-top: 10px;
-                    }
-                }
-            }
-        }
+}
+.slider-rows-container {
+    order: -1;
+    width: 620px;
+}
+.slider-row {
+    display: flex;
+    flex-direction: row-reverse;
+    column-gap: 9px;
+    transition: transform 1s linear;
+    > img {
+        height: 200px;
+        width: auto;
+        border-radius: 5px;
     }
+}
 
-    #btnScrollLeft {
-        border: 1px solid $color-light-gray;
-    }
+.no-transitions {
+    transition: none;
+}
 
-    #btnScrollRight {
-        border: 1px solid $color-dark-blue;
-    }
+.top-row {
+    margin-bottom: 10px;
+}
 
-    /*slider info text --------------------------------------------------------*/
+.bot-row-container {
+    display: flex;
+    flex-direction: row;
+}
+.bot-row {
+    width: 460px;
+}
 
-    .slider-info {
-        font-family: $font-main;
-        font-style: normal;
-        padding-left: 20px;
-        z-index: 100;
+/*slider buttons ----------------------------------------------*/
+.slider-btns {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 100px;
+    z-index: 100;
+    background-color: white;
+
+    > button {
         background-color: white;
-        h2 {
-            font-weight: bold;
-            font-size: 32px;
-            line-height: 40px;
-            display: flex;
-            align-items: flex-end;
-            letter-spacing: -0.2px;
-            color: $color-dark-blue;
-        }
+        width: 60px;
+        height: 60px;
+        border-radius: 5px;
 
-        p {
-            font-weight: normal;
-            font-size: 18px;
-            line-height: 26px;
-            display: flex;
-            align-items: center;
-            letter-spacing: -0.2px;
-            color: $color-dark-gray;
-            margin-top: 20px;
+        &:last-child {
+            margin-top: 10px;
         }
+    }
+}
+
+#btnScrollLeft {
+    border: 1px solid $color-light-gray;
+
+    &:hover,
+    &:active {
+        border: 1px solid $color-dark-blue;
+        > img {
+            content: url("./images/arrow-blue-left.png");
+        }
+    }
+}
+
+#btnScrollRight {
+    border: 1px solid $color-light-gray;
+
+    &:hover,
+    &:active {
+        border: 1px solid $color-dark-blue;
+        > img {
+            content: url("./images/arrow-blue-right.png");
+        }
+    }
+}
+
+/*slider info text --------------------------------------------------------*/
+.slider-info {
+    font-family: $font-main;
+    font-style: normal;
+    padding-left: 20px;
+    z-index: 100;
+    background-color: white;
+    h2 {
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 40px;
+        display: flex;
+        align-items: flex-end;
+        letter-spacing: -0.2px;
+        color: $color-dark-blue;
+    }
+
+    p {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 26px;
+        display: flex;
+        align-items: center;
+        letter-spacing: -0.2px;
+        color: $color-dark-gray;
+        margin-top: 20px;
     }
 }
