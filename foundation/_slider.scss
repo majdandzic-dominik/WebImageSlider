@@ -1,7 +1,52 @@
+@use "resources";
+
+@mixin paragraphTitle {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.2px;
+    color: $color-dark-blue;
+}
+
+@mixin paragraphText {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.2px;
+    color: $color-dark-gray;
+    margin-top: 20px;
+}
+
+@mixin frontWhiteBackground {
+    z-index: 100;
+    background-color: white;
+}
+
+@mixin btnStyle {
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+}
+
+@mixin btnChange {
+    &:hover,
+    &:active,
+    &:focus {
+        border: 1px solid $color-dark-blue;
+        cursor: pointer;
+        > img {
+            @content;
+        }
+    }
+}
+
 .slider-container {
     display: flex;
     flex-direction: row;
-    width: 941px;
+    width: $main-content-width;
     margin: auto;
     margin-bottom: 60px;
 }
@@ -43,14 +88,10 @@
     flex-direction: column;
     width: 100%;
     padding-left: 100px;
-    z-index: 100;
-    background-color: white;
+    @include frontWhiteBackground;
 
     > button {
-        background-color: white;
-        width: 60px;
-        height: 60px;
-        border-radius: 5px;
+        @include btnStyle;
 
         &:last-child {
             margin-top: 10px;
@@ -61,56 +102,32 @@
 #btnScrollLeft {
     border: 1px solid $color-light-gray;
 
-    &:hover,
-    &:active,
-    &:focus {
-        border: 1px solid $color-dark-blue;
-        cursor: pointer;
-        > img {
-            content: url("./images/arrow-blue-left.png");
-        }
+    @include btnChange {
+        content: url("./images/arrow-blue-left.png");
     }
 }
 
 #btnScrollRight {
     border: 1px solid $color-light-gray;
 
-    &:hover,
-    &:active,
-    &:focus {
-        border: 1px solid $color-dark-blue;
-        cursor: pointer;
-        > img {
-            content: url("./images/arrow-blue-right.png");
-        }
+    @include btnChange {
+        content: url("./images/arrow-blue-right.png");
     }
 }
 
 /*slider info text --------------------------------------------------------*/
+
 .slider-info {
     font-family: $font-main;
     font-style: normal;
     padding-left: 20px;
-    z-index: 100;
-    background-color: white;
+    @include frontWhiteBackground;
+
     h2 {
-        font-weight: bold;
-        font-size: 32px;
-        line-height: 40px;
-        display: flex;
-        align-items: flex-end;
-        letter-spacing: -0.2px;
-        color: $color-dark-blue;
+        @include paragraphTitle;
     }
 
     p {
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 26px;
-        display: flex;
-        align-items: center;
-        letter-spacing: -0.2px;
-        color: $color-dark-gray;
-        margin-top: 20px;
+        @include paragraphText;
     }
 }
