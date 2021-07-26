@@ -1,0 +1,27 @@
+{
+  "name": "webimageslider",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel": "./node_modules/.bin/babel",
+    "build": "babel index.js -d lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/majdandzic-dominik/WebImageSlider.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/majdandzic-dominik/WebImageSlider/issues"
+  },
+  "homepage": "https://github.com/majdandzic-dominik/WebImageSlider#readme",
+  "dependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.14.8",
+    "@babel/preset-env": "^7.14.8"
+  }
+}
