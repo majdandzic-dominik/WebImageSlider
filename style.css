@@ -54,7 +54,6 @@ footer {
   color: white;
 }
 
-@use "resources";
 .slider-container {
   display: -webkit-box;
   display: -ms-flexbox;
