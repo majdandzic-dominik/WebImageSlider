@@ -19,6 +19,7 @@ header {
   width: 941px;
   height: 100px;
   margin: auto;
+  margin-bottom: 60px;
 }
 
 .header-left {
@@ -64,7 +65,28 @@ footer {
 }
 
 /*image slider -------------------------------------------------------------------*/
-.slider-row {
+.slider-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 941px;
+  margin: auto;
+  margin-bottom: 60px;
+  /*slider info text --------------------------------------------------------*/
+}
+
+.slider-container .slider-rows-container {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  width: 620px;
+}
+
+.slider-container .slider-rows-container .slider-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -80,62 +102,74 @@ footer {
   transition: transform 1s linear, -webkit-transform 1s linear;
 }
 
-.slider-row > img {
+.slider-container .slider-rows-container .slider-row > img {
   height: 200px;
   width: auto;
   border-radius: 5px;
   position: relative;
 }
 
-.no-transitions {
+.slider-container .slider-rows-container .no-transitions {
   -webkit-transition: none;
   transition: none;
 }
 
-.top-row {
-  width: 1230px;
-  height: 200px;
+.slider-container .slider-rows-container .top-row {
+  margin-bottom: 10px;
 }
 
-.bot-row {
-  width: 1080px;
-  height: 200px;
+.slider-container .slider-rows-container .bot-row-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  /*slider buttons ----------------------------------------------*/
 }
 
-/*slider buttons ----------------------------------------------*/
-.slider-btns {
-  width: 60px;
-  height: 130px;
+.slider-container .slider-rows-container .bot-row-container .bot-row {
+  width: 460px;
 }
 
-.slider-btns > button {
+.slider-container .slider-rows-container .bot-row-container .slider-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: auto;
+}
+
+.slider-container .slider-rows-container .bot-row-container .slider-btns > button {
   background-color: white;
   width: 60px;
   height: 60px;
   border-radius: 5px;
 }
 
-.slider-btns > button:last-child {
+.slider-container .slider-rows-container .bot-row-container .slider-btns > button:last-child {
   margin-top: 10px;
 }
 
-#btnScrollLeft {
+.slider-container #btnScrollLeft {
   border: 1px solid #dddddd;
 }
 
-#btnScrollRight {
+.slider-container #btnScrollRight {
   border: 1px solid #134880;
 }
 
-/*slider info text --------------------------------------------------------*/
-.slider-info {
-  width: 301px;
-  height: 296px;
+.slider-container .slider-info {
   font-family: "Source Sans Pro", sans-serif;
   font-style: normal;
+  margin-left: 20px;
 }
 
-.slider-info h2 {
+.slider-container .slider-info h2 {
   font-weight: bold;
   font-size: 32px;
   line-height: 40px;
@@ -149,7 +183,7 @@ footer {
   color: #134880;
 }
 
-.slider-info p {
+.slider-container .slider-info p {
   font-weight: normal;
   font-size: 18px;
   line-height: 26px;

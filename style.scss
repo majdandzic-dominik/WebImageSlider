@@ -20,6 +20,7 @@ header {
     width: 941px;
     height: 100px;
     margin: auto;
+    margin-bottom: 60px;
 }
 
 .header-left {
@@ -58,85 +59,99 @@ footer {
 }
 
 /*image slider -------------------------------------------------------------------*/
-
-.slider-row {
+.slider-container {
     display: flex;
-    flex-direction: row-reverse;
-    column-gap: 9px;
-    transition: transform 1s linear;
-    > img {
-        height: 200px;
-        width: auto;
-        border-radius: 5px;
-        position: relative;
-    }
-}
+    flex-direction: row;
+    width: 941px;
+    margin: auto;
+    margin-bottom: 60px;
 
-.no-transitions {
-    transition: none;
-}
+    .slider-rows-container {
+        order: -1;
+        width: 620px;
 
-.top-row {
-    width: 1230px;
-    height: 200px;
-}
+        .slider-row {
+            display: flex;
+            flex-direction: row-reverse;
+            column-gap: 9px;
+            transition: transform 1s linear;
 
-.bot-row {
-    width: 1080px;
-    height: 200px;
-}
+            > img {
+                height: 200px;
+                width: auto;
+                border-radius: 5px;
+                position: relative;
+            }
+        }
 
-/*slider buttons ----------------------------------------------*/
-.slider-btns {
-    width: 60px;
-    height: 130px;
+        .no-transitions {
+            transition: none;
+        }
 
-    > button {
-        background-color: white;
-        width: 60px;
-        height: 60px;
-        border-radius: 5px;
+        .top-row {
+            margin-bottom: 10px;
+        }
 
-        &:last-child {
-            margin-top: 10px;
+        .bot-row-container {
+            display: flex;
+            flex-direction: row;
+
+            .bot-row {
+                width: 460px;
+            }
+            /*slider buttons ----------------------------------------------*/
+            .slider-btns {
+                display: flex;
+                flex-direction: column;
+                margin-left: auto;
+
+                > button {
+                    background-color: white;
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 5px;
+
+                    &:last-child {
+                        margin-top: 10px;
+                    }
+                }
+            }
         }
     }
-}
 
-#btnScrollLeft {
-    border: 1px solid $color-light-gray;
-}
-
-#btnScrollRight {
-    border: 1px solid $color-dark-blue;
-}
-
-/*slider info text --------------------------------------------------------*/
-
-.slider-info {
-    width: 301px;
-    height: 296px;
-    font-family: $font-main;
-    font-style: normal;
-
-    h2 {
-        font-weight: bold;
-        font-size: 32px;
-        line-height: 40px;
-        display: flex;
-        align-items: flex-end;
-        letter-spacing: -0.2px;
-        color: $color-dark-blue;
+    #btnScrollLeft {
+        border: 1px solid $color-light-gray;
     }
 
-    p {
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 26px;
-        display: flex;
-        align-items: center;
-        letter-spacing: -0.2px;
-        color: $color-dark-gray;
-        margin-top: 20px;
+    #btnScrollRight {
+        border: 1px solid $color-dark-blue;
+    }
+
+    /*slider info text --------------------------------------------------------*/
+
+    .slider-info {
+        font-family: $font-main;
+        font-style: normal;
+        margin-left: 20px;
+        h2 {
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 40px;
+            display: flex;
+            align-items: flex-end;
+            letter-spacing: -0.2px;
+            color: $color-dark-blue;
+        }
+
+        p {
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 26px;
+            display: flex;
+            align-items: center;
+            letter-spacing: -0.2px;
+            color: $color-dark-gray;
+            margin-top: 20px;
+        }
     }
 }
